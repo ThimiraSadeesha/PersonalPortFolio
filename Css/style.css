@@ -10,7 +10,7 @@
     /* HSL color mode */
     --hue-color: 224;
     --first-color: #124cee;
-    --second-color: #161f24;
+    --second-color: #131212;
     /*===== Fuente y tipografia =====*/
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
@@ -74,7 +74,15 @@ img {
 
 }
 
+.home__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
 
+    bottom: 800px;
+}
 /*===== CLASS CSS ===== */
 .section-title {
     position: relative;
@@ -205,6 +213,7 @@ img {
 
 .home__title {
     font-size: var(--big-font-size);
+    text-shadow: 0 5px 10px rgba(17, 12, 250, 0.2);
     /*margin-bottom: var(--mb-5);*/
 }
 .test{
@@ -236,7 +245,8 @@ img {
 
 .home__img {
     position: absolute;
-    right: 0;
+    right:0;
+    top: 5px;
     bottom: 0;
     width: 260px;
 }
@@ -261,9 +271,14 @@ img {
 }
 
 .button:hover {
+    color: #0f1834;
     box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
-
+.work__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+}
 
 /* ===== ABOUT =====*/
 .about__container {
@@ -276,34 +291,12 @@ img {
 }
 
 .about__img {
-    /*margin-right: 100;*/
-    /*justify-self: center;*/
+    margin-right: 100px;
+    justify-self: center;
 
 }
 
-.about__img img {
 
-    border-radius: 50%;
-}
-
-/* ===== WORK =====*/
-.work__container {
-    row-gap: 2rem;
-}
-
-.work__img {
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    border-radius: .5rem;
-    overflow: hidden;
-}
-
-.work__img img {
-    transition: 1s;
-}
-
-.work__img img:hover {
-    transform: scale(1.1);
-}
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -325,11 +318,14 @@ img {
     cursor: pointer;
     margin-left: auto;
 }
+.contact__button:hover {
+    color: #ee0808;
+}
 
 /* ===== FOOTER =====*/
 .footer {
-    background-color: var(--second-color);
-    color: #fff;
+    background-color: #eeeaea;
+    color: rgb(9, 0, 0);
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
@@ -346,7 +342,7 @@ img {
 
 .footer__icon {
     font-size: 1.5rem;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.5);
     margin: 0 var(--mb-2);
 }
 
@@ -387,23 +383,12 @@ img {
         align-items: center;
         text-align: initial;
     }
-    .skills__container {
-        grid-template-columns: .7fr;
-        justify-content: center;
-        column-gap: 1rem;
-    }
     .work__container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
-        padding-top: 2rem;
     }
-    .contact__form {
-        width: 360px;
-        padding-top: 2rem;
-    }
-    .contact__container {
-        justify-items: center;
-    }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -453,7 +438,7 @@ img {
     }
     .about__img img {
         width: 300px;
-        border-radius: 50%;
+        border-radius: 10%;
     }
 
 }
