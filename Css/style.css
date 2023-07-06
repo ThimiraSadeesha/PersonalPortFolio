@@ -1,5 +1,6 @@
-/*===== GOOGLE FONTS =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /*===== VARIABLES CSS =====*/
 :root {
     --header-height: 3rem;
@@ -9,7 +10,7 @@
     /* HSL color mode */
     --hue-color: 224;
     --first-color: #124cee;
-    --second-color: #0f1834;
+    --second-color: #161f24;
     /*===== Fuente y tipografia =====*/
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
@@ -25,6 +26,7 @@
     --z-back: -10;
     --z-fixed: 100;
 }
+
 
 @media screen and (min-width: 968px) {
     :root {
@@ -69,7 +71,9 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+
 }
+
 
 /*===== CLASS CSS ===== */
 .section-title {
@@ -113,7 +117,7 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: #ffffff;
-    box-shadow: 0 1px 4px rgb(255, 255, 255);
+    box-shadow: 0 1px 4px rgb(206, 205, 205);
 }
 
 /*===== NAV =====*/
@@ -140,11 +144,12 @@ img {
 
 .nav__item {
     margin-bottom: var(--mb-4);
+
 }
 
 .nav__link {
     position: relative;
-    color: #fff;
+    color: #161f24;
 }
 
 .nav__link:hover {
@@ -200,7 +205,12 @@ img {
 
 .home__title {
     font-size: var(--big-font-size);
-    margin-bottom: var(--mb-5);
+    /*margin-bottom: var(--mb-5);*/
+}
+.test{
+    color: #0f1834;
+    font-size: 25px;
+
 }
 
 .home__title-color {
@@ -243,7 +253,7 @@ img {
 .button {
     display: inline-block;
     background-color: var(--first-color);
-    color: #fff;
+    color: #ffffff;
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: .5rem;
@@ -253,6 +263,7 @@ img {
 .button:hover {
     box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
+
 
 /* ===== ABOUT =====*/
 .about__container {
@@ -265,12 +276,14 @@ img {
 }
 
 .about__img {
-    justify-self: center;
+    /*margin-right: 100;*/
+    /*justify-self: center;*/
+
 }
 
 .about__img img {
-    width: 200px;
-    border-radius: .5rem;
+
+    border-radius: 50%;
 }
 
 /* ===== WORK =====*/
@@ -419,19 +432,20 @@ img {
     .nav__item {
         margin-left: var(--mb-6);
         margin-bottom: 0;
+        color: white;
     }
     .nav__toggle {
         display: none;
     }
     .nav__link {
-        color: #090000;
-                /*var(--second-color);*/
+        color: var(--second-color);
+        font-weight: bold;
     }
     .home {
         padding: 8rem 0 2rem;
     }
     .home__img {
-        width: 400px;
+        width: 300px;
         bottom: 10%;
     }
     .about__container {
@@ -439,17 +453,13 @@ img {
     }
     .about__img img {
         width: 300px;
+        border-radius: 50%;
     }
-    .skills__container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-        align-items: center;
-        text-align: initial;
-    }
-    .work__container {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
-    }
+
+}
+.test-title{
+    color: #124cee;
+    margin-left: 150px;
 }
 
 @media screen and (min-width: 992px) {

@@ -1,26 +1,94 @@
-.container{
-    width: 1000px;
-    position: relative;
-    display: flex;
-     justify-content: space-between;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+.container {
+  padding-bottom: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.container .heading{
+    text-align: center;
+    padding-bottom:15px;
+    color:#124cee;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    font-size: 50px;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+    gap: 15px;
 
 }
-.container.card{
-    position: relative;
-    cursor: pointer;
-}
-.container.card .face{
+.box{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
 
-    width: 200px;
-    height: 300%;
-    transition: 0.5s;
 }
-.container.card .face.face1{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translate(100px);
+.box-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+    gap: 15px;
+    margin-right: 580px;
+
+
+}
+.box1{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding:  30px 20px;
+
+}
+.box-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+    gap: 15px;
+    margin-right: 380px;
+
+}
+.box2{
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding:  30px 20px;
+
+}
+.box-container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+    gap: 15px;
+    margin-right: 280px;
+
+
+}
+.box3{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding:  30px 20px;
+
+}
+.box2 h3{
+    color: #444;
+    font-size: 20px;
+
+}
+.box3 h3{
+    color: #444;
+    font-size: 20px;
+
+}
+.box1 h3{
+    color: #444;
+    font-size: 22px;
+}
+
+.box h3{
+    color: #444;
+    font-size: 22px;
 }
