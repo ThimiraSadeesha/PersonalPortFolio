@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+
     <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/Card.css">
+
+    <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
 </head>
 <body>
+<!--===== HEADER =====-->
 <header class="l-header">
     <nav class="nav bd-grid">
         <div>
-            <a href="#" class="nav__logo">SADEESHA</a>
+            <a href="#" class="nav__logo">Sadeesha</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="#skills" class="nav__link">Technologies</a></li>
-                <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </div>
@@ -30,164 +34,176 @@
         </div>
     </nav>
 </header>
-    <main class="l-main">
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Thimira </span></h1>
-                <h1 class="test">Software Engineer Undergraduate</h1><br>
 
-                <a href="#" class="button">Find Me</a>
-            </div>
+<main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Thimira </span><br>
+            Undergraduate</h1>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/thimira-sadeesha-416328213" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://instagram.com/sadeeeeeeeyooo_b?igshid=MzNlNGNkZWQ4Mg==" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/SadeeshThimira1/Furniture_POS-System.git" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-            </div>
+            <a href="#" class="button">Find Me</a>
+        </div>
 
-            <div class="home__img">
-                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" >
-                    <g mask="url(#mask0)">
-                    </g>
-                </svg>
-            </div>
-        </section>
+        <div class="home__social">
+            <a href="https://www.linkedin.com/in/thimira-sadeesha-416328213" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://instagram.com/sadeeeeeeeyooo_b?igshid=MzNlNGNkZWQ4Mg==" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/SadeeshThimira1/InventoryManagemetSystem.git" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+        </div>
         <div class="home__img">
-            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" >
-
+            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g mask="url(#mask0)">
                     <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
 
                 </g>
             </svg>
         </div>
-        <section class="about section " id="about">
-            <h2 class="section-title">About Me</h2>
+    </section>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="Img/Mine.jpg" alt="">
-                </div>
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About Me</h2>
 
-                <div>
-                    <h2 class="about__subtitle">I'am Thimira Sadeesha</h2>
-                    <p class="about__text">I'm pursuing a bachelor's degree at the University of Moratuwa in my second year.
-                        I am self-motivated, hardworking, responsible, and friendly, with good problem-solving abilities and the willingness to take on new challenges in a fast-paced setting.
-                        I am also willing to learn new skills and technologies from anyone to improve myself.</p>
-                </div>
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="Img/Mine.jpg" alt="">
             </div>
-        </section>
-    <!--    Cards start-->
-        <section class="Skills-Card" id="skills">
-            <div class="container">
-                <h2 class="section-title">Technologies</h2>
-                <h1 class="test-title">Languages</h1>
-                <div class="box-container">
-                    <div class="box">
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="box">
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="box">
-                        <h3>JAVASCRIPT</h3>
-                    </div>
 
-                    <div class="box">
-                        <h3>MYSQL</h3>
-                    </div>
-                </div>
-                <br>
-                <div class="box-container3">
-                    <div class="box3">
-                        <h3>PHP</h3>
-                    </div>
-                    <div class="box3">
-                        <h3>JAVA</h3>
-                    </div>
-                    <div class="box3">
-                        <h3>C#</h3>
-                    </div>
-                </div>
-                <br>  <br>
-                <h1 class="test-title">Frameworks</h1>
-                <div class="box-container1">
-                    <div class="box1">
-                        <h3>BOOSTRAP</h3>
-                    </div>
-                    <div class="box">
-                        <h3>AJAX</h3>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <h1 class="test-title">Systems</h1>
-                <div class="box-container">
-                    <div class="box">
-                        <h3>VSCode</h3>
-                    </div>
-                    <div class="box">
-                        <h3>IntelliJ Idea</h3>
-                    </div>
-                    <div class="box">
-                        <h3>Android Studio</h3>
-                    </div>
-                    <div class="box">
-                        <h3>PHP Storm</h3>
-                    </div>
-                </div>
+            <div>
+                <h2 class="about__subtitle">I'm Thimira Sadeesha</h2>
+                <p class="about__text">I'm Thimira Sadeesha, and I'm pursuing a bachelor's degree at the University of Moratuwa in my second year. I am self-motivated, hardworking, responsible, and friendly, with good problem-solving abilities and the willingness to take on new challenges in a fast-paced setting. I am also willing to learn new skills and technologies from anyone to improve myself.</p>
             </div>
-        </section>
-        <br>
-    <!--    card end-->
-        <section class="project" id="project">
-
-                <h2 class="section-title">Projects</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://github.com/SadeeshThimira1/InventoryManagemetSystem.git" class="work__img">
-                        <h1 style="text-align: center;color: #1c1a1a">Inventory Management System(POS)</h1>
-                        <img src="Img/Galle%20Auto.jpg" alt="">
-                        <p style="text-align: center;color: #1c1a1a">Developed a computer-based inventory management system for Galle auto parts Shop</p>
-                        <p style="text-align: center"><mark>C#</mark> <mark>MYSQL</mark></p>
-
-                    </a>
-
-                    <a href="https://github.com/SadeeshThimira1/Furniture_POS-System.git" class="work__img">
-                        <h1 style="text-align: center;color: #1c1a1a">Inventory Management System(POS)</h1>
-                        <img src="Img/WhatsApp%20Image%202023-06-23%20at%2018.29.29%20(1).jpeg" alt="">
-                        <p style="text-align: center;color: #1c1a1a">Developed a computer-based inventory management system for Furniture Shop</p>
-                        <p style="text-align: center"><mark>C#</mark> <mark>MYSQL</mark></p><br>
-
-                    </a>
-
-                    <a href="https://github.com/SadeeshThimira1/Android_APP.git" class="work__img">
-                        <h1 style="text-align: center;color: #1c1a1a">NewsPaper Distributor APP(Android)</h1><br>
-                        <img src="Img/image__05277.jpg" alt=""><br>
-                        <h1 style="text-align: center;color: rgba(1,4,190,0.72);font-size: 30px">NewsPaper APP</h1><br>
-                        <p style="text-align: center;color: #1c1a1a">Developed a Mobile App for Newspaper Distributor</p>
-                        <p style="text-align: center"><mark>JAVA</mark> <mark>SQlLITE</mark> <mark>JASON</mark> <mark>MYSQL</mark></p><br>
-
-                    </a>
-
-
-                </div>
-
-        </section>
-
-    </main>
-<br><br>
-
-
-    <footer class="footer">
-        <p class="footer__title">Thimira Sadeesha</p>
-        <div class="footer__social">
-            <a href="https://www.linkedin.com/in/thimira-sadeesha-416328213" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://instagram.com/sadeeeeeeeyooo_b?igshid=MzNlNGNkZWQ4Mg==" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-            <a href="https://github.com/SadeeshThimira1/Furniture_POS-System.git" class="footer__icon"><i class='bx bxl-github' ></i></a>
         </div>
-        <p class="footer__copy">&#169; Thimira Sadeesha. All rigths reserved</p>
-    </footer>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Technologies</h2>
+        <h2 style="color: #3d62c7;text-align: center;font-size: 28px">Languages</h2><br>
+        <div class="skills__container bd-grid">
+                <div class="skills__data">
+            <h1>HTML</h1>
+             </div>
+                  <div class="skills__data">
+                    <h1>CSS</h1>
+                </div>
+
+
+               <div class="skills__data">
+                    <h1>JS</h1>
+                </div>
+                <div class="skills__data">
+                    <h1>PHP</h1>
+                </div>
+
+
+               <div class="skills__data">
+                    <h1>C#</h1>
+                </div>
+                <div class="skills__data">
+                    <h1>JAVA</h1>
+                </div>
+
+
+           <div class="skills__data">
+                    <h1>Mysql</h1>
+
+           </div>
+       </div>
+        <h2 style="color: #3d62c7;text-align: center;font-size: 28px">Libraries</h2><br>
+            <div class="skills__container bd-grid">
+
+                <div class="skills__data">
+                    <h1>Boostrap</h1>
+                </div>
+                <div class="skills__data">
+                    <h1>Ajax</h1>
+                </div>
+            </div>
+        <h1 style="color: #3d62c7;text-align: center;font-size: 28px">System</h1><br>
+        <div class="skills__container bd-grid">
+
+            <div class="skills__data">
+                <h1>VS Code</h1>
+            </div>
+            <div class="skills__data">
+                <h1>IntelliJ</h1>
+            </div>
+            <div class="skills__data">
+                <h1>PHP Storm</h1>
+            </div>
+            <div class="skills__data">
+                <h1>Android Studio</h1>
+            </div>
+            <div class="skills__data">
+                <h1>Visual Studio</h1>
+            </div>
+            <div class="skills__data">
+                <h1>After Effects</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="work__container bd-grid">
+            <a href="https://github.com/SadeeshThimira1/InventoryManagemetSystem.git" class="work__img">
+                <H1 style="text-align: center;color: #1f2134">Inventory Management System(POS)</H1>
+                <img src="Img/Galle%20Auto.jpg" alt="">
+                <p style="text-align: center;color: #041bec">Develop a Inventory Management System for Galle Auto Parts Shop</p><br>
+
+            </a>
+            <a href="https://github.com/SadeeshThimira1/Furniture_POS-System.git" class="work__img">
+                <H1 style="text-align: center;color: #1f2134">Newspaper Distributor App</H1><br>
+                <img src="Img/The_Indianapolis_Star,_2011.jpg" alt=""><br>
+                <H1 style="text-align: center;color: #71ff03">NewspaperRide</H1><br>
+                <p style="text-align: center;color: #041bec">Develop a Mobile App for NewsPaper Distributors</p><br>
+
+            </a>
+            <a href="https://github.com/SadeeshThimira1/Android_APP.git" class="work__img">
+                <H1 style="text-align: center;color: #1f2134">Inventory Management System(POS)</H1>
+                <img src="Img/WhatsApp%20Image%202023-06-23%20at%2018.29.29%20(1).jpeg" alt="">
+                <h1 style="color: #3d62c7;text-align: center;font-size: 28px"></h1>
+                <p style="text-align: center;color: #041bec">Develop a Inventory Management System for Dhammika Furniture Shop</p>
+
+            </a>
+
+        </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+
+        <div class="skills__container bd-grid">
+            <h2 class="home__title">Lets Talk.<br>
+                Tell Me More About Your Project</h2>
+            <div class="skills__data">
+
+                 <div class="contact__container bd-grid">
+                    <form action="#" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+                        <input type="Submit" value="Submit"  class="contact__button button">
+                    </form>
+                </div>
+        </div>
+    </section>
+</main>
+
+<!--===== FOOTER =====-->
+<footer class="footer">
+    <p class="footer__title">Thimira Sadeesha</p>
+    <div class="footer__social">
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <p class="footer__copy">Thimira Sadeesha&#169; All rigths reserved</p>
+</footer>
 
 
 <!--===== SCROLL REVEAL =====-->
